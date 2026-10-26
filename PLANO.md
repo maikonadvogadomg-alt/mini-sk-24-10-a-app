@@ -1,19 +1,19 @@
 # 📋 Plano do projeto: Mini-SK-24-10-A
 
-_Gerado em 24/10/2026, 10:57:31 — sem IA, lendo os arquivos._
+_Gerado em 26/10/2026, 00:49:00 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
 |---|---|
-| Arquivos | 85 |
-| Linhas | 13.777 |
+| Arquivos | 91 |
+| Linhas | 15.245 |
 | Telas/páginas | 2 |
 | Rotas do backend | 0 |
-| Chamadas do app | 0 |
+| Chamadas do app | 3 |
 | Tabelas do banco | 0 |
 | Variáveis de ambiente | 8 |
 
-**Linguagens:** JavaScript (59), Imagem (15), HTML (2), Outros (2), Imagem SVG (2), Markdown (2), CSS (1), Ícone (1), JSON (1)
+**Linguagens:** JavaScript (59), Imagem (15), JSON (3), Markdown (3), YAML (2), HTML (2), Outros (2), Imagem SVG (2), CSS (1), Python (1), Ícone (1)
 
 ## 💡 O que fazer (em ordem)
 1. 🧹 Tirar a Replit de 16 arquivo(s) (🏗️ Preparar → Fazer tudo)
@@ -34,7 +34,11 @@ _Gerado em 24/10/2026, 10:57:31 — sem IA, lendo os arquivos._
 _Nenhum encontrado._
 
 ## 📡 O que o app pede ao servidor
-_Nenhum encontrado._
+| Método | Endereço | Onde |
+|---|---|---|
+| POST | `/__pc/ollama-ligar` | exe/abrir.py |
+| POST | `/__pc/ollama-desligar` | exe/abrir.py |
+| POST | `/__pc/abrir-pasta` | exe/abrir.py |
 
 ## 🔌 O que falta no backend
 ✅ Tudo que o app chama tem rota no projeto (ou o app não usa servidor).
@@ -130,8 +134,14 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 
 ## 🌳 Árvore de arquivos
 ```
+├─ 📁 .github/
+│  └─ 📁 workflows/
+│     ├─ apk.yml
+│     └─ programa-exe.yml
 ├─ 📁 css/
 │  └─ app.css
+├─ 📁 exe/
+│  └─ abrir.py
 ├─ 📁 icons/
 │  ├─ apple-touch-icon.png
 │  ├─ icon-128.png
@@ -212,13 +222,16 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 │  ├─ 97c-modularizar.js
 │  ├─ 98-api.js
 │  └─ 99-app.js
+├─ apk.config.json
 ├─ favicon.ico
 ├─ hub.html
 ├─ hub.webmanifest
 ├─ index.html
 ├─ LEIA-ME.md
 ├─ manifest.json
+├─ package-lock.json
 ├─ PLANO.md
+├─ RECEITA.md
 ├─ service-worker.js
 └─ sw.js
 ```
